@@ -1,0 +1,12 @@
+name: Main Workflow
+on:
+  push:
+    branches:
+      - develop
+    paths:
+      - sample-java-app
+      - sample-app-2 
+  workflow_dispatch:
+jobs:  
+  build:     
+     uses: divyatrm/pipeline/.github/workflows/build.yml@main
